@@ -12,41 +12,26 @@ As this is a [JHipster](http://jhipster.github.io/) module, we expect you have J
 
 - [Installing JHipster](https://jhipster.github.io/installation.html)
 
-# Installation
-
-## With Yarn
-
-To install this module:
-
-```bash
-yarn global add generator-jhipster-ebp
-```
-
-To update this module:
-
-```bash
-yarn global upgrade generator-jhipster-ebp
-```
-
-## With NPM
-
-To install this module:
-
-```bash
-npm install -g generator-jhipster-ebp
-```
-
-To update this module:
-
-```bash
-npm update -g generator-jhipster-ebp
-```
-
 # Usage
 
-# License
+Launch:
 
+To begin to work:
+- launch: ```yarn install``` or ```npm install```
 
+- link: ```yarn link``` or ```npm link```
+
+- test your module in a JHipster project:
+
+    - go into your JHipster project
+    - link to your module: ```yarn link generator-jhipster-ebp``` 
+    or  ```npm link generator-jhipster-ebp```
+    - add array 
+    
+    ```"entitiesToChange": ["entity_to_change", "entity_to_change2", ...] ``` 
+    
+    into file ```.yo-rc.json```
+    - launch your module: ```yo jhipster-ebp```
 
 [npm-image]: https://img.shields.io/npm/v/generator-jhipster-ebp.svg
 [npm-url]: https://npmjs.org/package/generator-jhipster-ebp
